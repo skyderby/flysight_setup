@@ -1,0 +1,159 @@
+<div class='row'>
+    <div class='col-sm-12'>
+        <div class='pull-right'>
+            <button class='btn btn-default dropdown-toggle' id='dropdownMenu1' type='button' data-toggle='dropdown'>
+                <i class='fa fa-cog'></i>
+            </button>
+            <ul class='dropdown-menu dropdown-menu-right' role='menu' aria-labelledby: 'dropdownMenu1'>
+                <li class='dropdown-header' role='presentation'>
+                  Show data:
+                </li>
+                <li id='li_toggle_multi' role='presentation'>
+                    <a id='toggle_multi' role='menuitem' tabindex='-1' href='#'>
+                      Separate charts
+                    </a>
+                </li>
+                <li id='li_toggle_single' role='presentation'>
+                    <a id='toggle_single' role='menuitem' tabindex='-1' href='#'>
+                      Single chart
+                    </a>
+                </li>
+                <li class='dropdown-header' role='presentation'>
+                  Units
+                </li>
+                <li id='li_toggle_metric' role='presentation'>
+                    <a id='toggle_metric' role='menuitem' tabindex='-1' href='#'>
+                      Metric
+                    </a>
+                </li>
+                <li id='li_toggle_imperial' role='presentation'>
+                    <a id='toggle_imperial' role='menuitem' tabindex='-1' href='#'>
+                      Imperial
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-sm-12 col-md-11 col-md-offset-1'>
+
+        <div class='col-md-4 col-sm-4 col-xs-6'>
+            <div class='param-val'>
+                <div class='avg-val fa-2x' id='dd_distance'>----</div>
+                <div class='min-max'>
+                    <span class='dotted-underline' id='total_distance'></span>
+                </div>
+                <div class='dst-unit'>m</div>
+            </div>
+            <div class='param'>
+                <i class='fa fa-fw fa-arrows-h'></i>
+                Distance
+            </div>
+        </div>
+
+        <div class='col-md-4 col-sm-4 col-xs-6'>
+            <div class='param-val'>
+                <div class='avg-val fa-2x' id='p_avg_h_speed'>---</div>
+                <div class='min-max text-right'>
+                    <div class='max-val'>
+                        <span id='p_max_h_speed'>---</span>
+                        <i class='fa fa-caret-up'></i>
+                    </div>
+                    <div class='min-val'>
+                        <span id='p_min_h_speed'>---</span>
+                        <i class='fa fa-caret-down min-val-caret'></i>
+                    </div>
+                </div>
+                <div class='spd-unit fa'>km/h</div>
+            </div>
+            <div class='param'>
+                <i class='fa fa-fw fa-long-arrow-right'></i>
+                Ground speed
+            </div>
+        </div>
+
+        <div class='col-md-4 col-sm-4 col-xs-6'>
+            <div class='param-val'>
+                <div class='avg-val fa-2x' id='p_avg_gr'>-.--</div>
+                <div class='min-max text-right'>
+                    <div class='max-val'>
+                        <span id='p_max_gr'>-.--</span>
+                        <i class='fa fa-caret-up'></i>
+                    </div>
+                    <div class='min-val'>
+                        <span id='p_min_gr'>-.--</span>
+                        <i class='fa fa-caret-down min-val-caret'></i>
+                    </div>
+                </div>
+            </div>
+            <div class='param'>
+                <i class='fa fa-fw fa-ellipsis-h'></i>
+                Glide ratio
+            </div>
+        </div>
+
+        <div class='col-md-4 col-sm-4 col-xs-6'>
+            <div class='param-val'>
+                <div class='avg-val fa-2x' id='dd_elevation'>----</div>
+                <div class='dst-unit fa'>m</div>
+            </div>
+            <div class='param'>
+                <i class='fa fa-fw fa-arrows-v'></i>
+                Elevation
+            </div>
+        </div>
+
+        <div class='col-md-4 col-sm-4 col-xs-6'>
+            <div class='param-val'>
+                <div class='avg-val fa-2x' id='p_avg_v_speed'>---</div>
+                <div class='min-max text-right'>
+                    <div class='min-val'>
+                        <span id='p_max_v_speed'>---</span>
+                        <i class='fa fa-caret-up'></i>
+                    </div>
+                    <div class='max-val'>
+                        <span id='p_min_v_speed'>---</span>
+                        <i class='fa fa-caret-down min-val-caret'></i>
+                    </div>
+                </div>
+                <div class='spd-unit'>km/h</div>
+            </div>
+            <div class='param'>
+                <i class='fa-fw fa fa-long-arrow-down'></i>
+                Vert. speed
+            </div>
+        </div>
+
+        <div class='col-md-4 col-sm-4 col-xs-6'>
+            <div class='param-val'>
+                <div class='avg-val fa-2x' id='dd_fl_time'>--.-</div>
+                <div class='time-unit'>sec</div>
+            </div>
+            <div class='param'>
+                <i class='fa fa-fw fa-clock-o'></i>
+                Time
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div id="slider-range-selector">
+  <input id="range-selector" {type: 'text', name: 'range-selector' , value: ''} />
+</div>
+
+<hr>
+
+<div class='row'>
+    <div class='col-sm-12'>
+        <div id='track-charts'>
+            <div id='glideratio_chart'></div>
+            <div id='speeds_chart'></div>
+            <div id='elevation_distance_chart'></div>
+            <div id='all_data_chart'></div>
+        </div>
+    </div>
+</div>

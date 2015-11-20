@@ -1,0 +1,52 @@
+<h2>Flysight config</h2>
+
+<h4>GPS Settings</h4>
+<strong>Model: </strong><span><%= model %></span>
+<strong>Rate: </strong><span><%= rate %></span>
+
+<hr>
+
+<h4>Tone Settings</h4>
+<strong>Mode: </strong><span><%= mode %></span>
+<strong>Min: </strong><span><%= min %></span>
+<strong>Max: </strong><span><%= max %></span>
+<strong>Limits: </strong><span><%= limits %></span>
+<strong>Volume: </strong><span><%= volume %></span>
+
+<hr>
+
+<h4>Rate Settings</h4>
+<strong>Mode_2: </strong><span><%= mode_2 %></span>
+<strong>Min_val_2: </strong><span><%= min_val_2 %></span>
+<strong>Max_val_2: </strong><span><%= max_val_2 %></span>
+<strong>Min_rate: </strong><span><%= min_rate %></span>
+<strong>Max_rate: </strong><span><%= max_rate %></span>
+
+<strong>Flatline: </strong><span><%= flatline %></span>
+
+<hr>
+
+<h4>Rate Settings</h4>
+<strong>Sp_mode: </strong><span><%= sp_mode %></span>
+<strong>Sp_units: </strong><span><%= sp_units %></span>
+<strong>Sp_rate: </strong><span><%= sp_rate %></span>
+<strong>Sp_dec: </strong><span><%= sp_dec %></span>
+<strong>Sp_volume: </strong><span><%= sp_volume %></span>
+
+<hr>
+
+<h4>Tresholds</h4>
+<strong>V_thresh: </strong><span><%= v_thresh %></span>
+<strong>H_thresh: </strong><span><%= h_thresh %></span>
+
+<hr>
+
+<h4>Alarms</h4>
+<% for (var i = 0; i < alarms.length; i++) { %>
+  <% var cur_alarm = alarms[i]; %>
+  <div>
+    <strong>Elev:</strong> <span><%= cur_alarm.alarm_elev %></span>
+    <strong>Type:</strong> <span><%= cur_alarm.alarm_type %></span>
+    <strong>File:</strong> <span><%= cur_alarm.alarm_file %></span>
+  </div>
+<% } %>

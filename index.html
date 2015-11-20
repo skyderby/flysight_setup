@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Skyderby</title>
+    <link rel="stylesheet" href="dist/styles/app.css">
+    <link rel="stylesheet" href="assets/styles/vendor/ion.rangeSlider.css">
+    <link rel="stylesheet" href="assets/styles/vendor/ion.rangeSlider.skinFlat.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <script>document.write(process.version)</script>
-    and Electron <script>document.write(process.versions['electron'])</script>.
+    <div id='wrapper'>
+      <div id='sidebar-wrapper'></div>
+      <div id='page-wrapper'></div>
+    </div>
+    <script src="browser/app.js"></script>
+    <script src="vendor/highcharts.js"></script>
+    <script src="vendor/ion.rangeSlider.js"></script>
   </body>
 </html>

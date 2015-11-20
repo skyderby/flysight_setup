@@ -1,5 +1,25 @@
 {
-  "name"    : "skyderby-desktop",
-  "version" : "0.1.0",
-  "main"    : "main.js"
+  "name": "skyderby-desktop",
+  "version": "0.1.0",
+  "main": "main.js",
+  "devDependencies": {
+    "electron-rebuild": "^1.0.2",
+    "grunt": "~0.4.5",
+    "grunt-concat-css": "^0.3.1",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "dependencies": {
+    "backbone": "1.2.3",
+    "bootstrap": "~3.3.0",
+    "csv-parse": "^1.0.0",
+    "ejs": "^2.3.4",
+    "font-awesome": "^4.4.0",
+    "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc8.tar.gz",
+    "jquery": "~2.1.0",
+    "ref": "^1.2.0",
+    "ref-struct": "^1.0.2"
+  }
 }
